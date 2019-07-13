@@ -19,3 +19,16 @@ welcome.addEventListener('dblclick', e =>
 
 // 5. keydown
 
+const searchInput = document.querySelector('.nav-container');
+const input = document.createElement('input');
+
+input.style.width = '18rem';
+
+const key = (e) => {
+  console.log( `${e.code}`);
+}
+
+input.addEventListener('keydown', key);
+
+searchInput.appendChild(input);
+
